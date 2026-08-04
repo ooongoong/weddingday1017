@@ -1,84 +1,95 @@
 @font-face {
     font-family: 'GyeonggiBatang';
-    src: url('../경기천년바탕_Regular.ttf') format('truetype');
+    src: url('../GyeonggiBatang-Regular.ttf') format('truetype');
 }
 
 .account-section{
     width:100%;
     background:#fffefc url("../account_bg.png") center center/cover no-repeat;
-    padding:70px 0;
-    display:flex;
-    justify-content:center;
+    padding:60px 0;
 }
 
 .account-container{
     width:100%;
     max-width:430px;
+    margin:0 auto;
     display:flex;
     flex-direction:column;
-    gap:20px;
-    padding:0 20px;
+    gap:18px;
+    padding:0 18px;
     box-sizing:border-box;
 }
 
 .account-card{
 
-    width:100%;
-    min-height:87px;
-
     background:#fffefc;
 
     border-radius:50px;
 
+    min-height:87px;
+
     display:flex;
+
     align-items:center;
 
     padding:0 28px;
 
-    box-sizing:border-box;
-
     box-shadow:
-    0 8px 25px rgba(0,0,0,.07);
+    0 12px 30px rgba(0,0,0,.08);
 
 }
 
 .account-left{
 
-    width:85px;
+    width:82px;
 
-    display:flex;
-    flex-direction:column;
+    flex-shrink:0;
 
-    align-items:center;
+    text-align:center;
 
 }
 
 .account-left .label{
 
+    display:block;
+
     font-size:13px;
-    color:#8b8b8b;
+
+    color:#9d988e;
+
+    margin-bottom:8px;
+
     font-family:'GyeonggiBatang';
 
-    margin-bottom:6px;
+    white-space:nowrap;
 
 }
 
 .account-left strong{
 
-    font-family:'GyeonggiBatang';
-    font-size:20px;
+    display:block;
+
+    font-size:22px;
+
     font-weight:400;
-    color:#474747;
+
+    color:#454545;
+
+    font-family:'GyeonggiBatang';
+
+    white-space:nowrap;
 
 }
 
 .divider{
 
     width:1px;
-    height:46px;
-    background:#e5e5e5;
 
-    margin:0 18px;
+    height:48px;
+
+    background:#e4e1db;
+
+    margin:0 22px;
 
 }
 
@@ -92,44 +103,51 @@
 
     align-items:center;
 
-    gap:10px;
+    gap:15px;
 
 }
 
 .account-number{
 
+    font-size:18px;
+
+    color:#575757;
+
     font-family:'GyeonggiBatang';
-    font-size:16px;
-    color:#555;
+
     white-space:nowrap;
 
 }
 
 .copy-btn{
 
+    width:122px;
+
+    height:52px;
+
     border:none;
 
     border-radius:999px;
 
-    padding:11px 18px;
-
-    background:#b8b39d;
+    background:#b9b198;
 
     color:#fff;
 
-    font-size:14px;
+    font-size:16px;
+
+    font-family:'GyeonggiBatang';
 
     cursor:pointer;
 
     transition:.25s;
 
-    white-space:nowrap;
+    flex-shrink:0;
 
 }
 
 .copy-btn:hover{
 
-    background:#9f9982;
+    background:#a79f86;
 
 }
 
@@ -141,21 +159,21 @@
 
     bottom:35px;
 
-    transform:translateX(-50%) translateY(20px);
+    transform:translateX(-50%);
 
     background:#333;
 
     color:#fff;
 
-    padding:12px 24px;
+    padding:12px 22px;
 
     border-radius:30px;
 
     opacity:0;
 
-    pointer-events:none;
-
     transition:.3s;
+
+    pointer-events:none;
 
     z-index:9999;
 
@@ -165,9 +183,4 @@
 
     opacity:1;
 
-    transform:translateX(-50%) translateY(0);
-
-}
-body{
-    background:red !important;
 }
