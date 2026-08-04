@@ -1,354 +1,43 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Day</title>
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-<!-- ======================
-     Gallery
-====================== -->
-
-<section id="gallery" class="gallery-section">
-
-    <h2 class="gallery-title">
-        사진을 클릭하시면 전체 화면 보기가 가능합니다
-    </h2>
-
-    <div id="galleryGrid" class="gallery-grid">
-        <!-- JS 자동 생성 -->
-    </div>
-
-    <button id="moreBtn" class="more-btn">
-        더보기
-    </button>
-
-</section>
-
-
-
-<!-- ======================
-     LightBox
-====================== -->
-
-<div id="lightbox" class="lightbox">
-
-    <button id="closeLightbox" class="close-btn">
-        ×
-    </button>
-
-    <button id="prevBtn" class="nav-btn prev">
-        &#10094;
-    </button>
-
-    <img id="lightboxImage">
-
-    <button id="nextBtn" class="nav-btn next">
-        &#10095;
-    </button>
-
-    <div class="photo-count">
-
-        <span id="currentPhoto">
-            1
-        </span>
-
-        /
-
-        <span id="totalPhoto">
-            29
-        </span>
-
-    </div>
-
-</div>
-
-
-
-<!-- ======================
-     Account
-====================== -->
-
 <section class="account-section">
+    <div class="account-container">
 
-    <div class="account-paper">
-
-        <button class="account-toggle" data-target="groom">
-
-            <span>🌼</span>
-
-            <span>신랑측 마음 전하실 곳</span>
-
-            <span class="arrow">⌄</span>
-
-        </button>
-
-
-        <div class="account-wrap" id="groom">
-
-            <div class="account-card">
-
-                <div class="person">
-
-                    <span>신랑</span>
-
-                    <strong>양광민</strong>
-
-                </div>
-
-                <div class="bank-box">
-
-                    <div>
-
-                        <div class="bank">
-                            우리은행
-                        </div>
-
-                        <div class="number">
-                            123-456-7890
-                        </div>
-
-                    </div>
-
-                    <button
-                        class="copy-btn"
-                        data-account="123-456-7890">
-
-                        복사
-
-                    </button>
-
-                </div>
-
+        <div class="account-card">
+            <div class="account-left">
+                <span class="label">신랑측</span>
+                <strong>홍길동</strong>
             </div>
 
+            <div class="divider"></div>
 
+            <div class="account-right">
+                <span class="account-number">신한은행 110-123-456789</span>
 
-            <div class="account-card">
-
-                <div class="person">
-
-                    <span>신랑 아버지</span>
-
-                    <strong>양원석</strong>
-
-                </div>
-
-                <div class="bank-box">
-
-                    <div>
-
-                        <div class="bank">
-                            우리은행
-                        </div>
-
-                        <div class="number">
-                            123-456-7890
-                        </div>
-
-                    </div>
-
-                    <button
-                        class="copy-btn"
-                        data-account="123-456-7890">
-
-                        복사
-
-                    </button>
-
-                </div>
-
+                <button class="copy-btn"
+                    data-copy="110-123-456789">
+                    📋 복사하기
+                </button>
             </div>
-
-
-
-            <div class="account-card">
-
-                <div class="person">
-
-                    <span>신랑 어머니</span>
-
-                    <strong>김신희</strong>
-
-                </div>
-
-                <div class="bank-box">
-
-                    <div>
-
-                        <div class="bank">
-                            우리은행
-                        </div>
-
-                        <div class="number">
-                            123-456-7890
-                        </div>
-
-                    </div>
-
-                    <button
-                        class="copy-btn"
-                        data-account="123-456-7890">
-
-                        복사
-
-                    </button>
-
-                </div>
-
-            </div>
-
         </div>
 
-
-
-        <button class="account-toggle" data-target="bride">
-
-            <span>🌸</span>
-
-            <span>신부측 마음 전하실 곳</span>
-
-            <span class="arrow">⌄</span>
-
-        </button>
-
-
-
-        <div class="account-wrap" id="bride">
-
-            <div class="account-card">
-
-                <div class="person">
-
-                    <span>신부</span>
-
-                    <strong>김시온</strong>
-
-                </div>
-
-                <div class="bank-box">
-
-                    <div>
-
-                        <div class="bank">
-                            우리은행
-                        </div>
-
-                        <div class="number">
-                            123-456-7890
-                        </div>
-
-                    </div>
-
-                    <button
-                        class="copy-btn"
-                        data-account="123-456-7890">
-
-                        복사
-
-                    </button>
-
-                </div>
-
-            </div>
-                        <div class="account-card">
-
-                <div class="person">
-
-                    <span>신부 아버지</span>
-
-                    <strong>김직재</strong>
-
-                </div>
-
-                <div class="bank-box">
-
-                    <div>
-
-                        <div class="bank">
-                            우리은행
-                        </div>
-
-                        <div class="number">
-                            123-456-7890
-                        </div>
-
-                    </div>
-
-                    <button
-                        class="copy-btn"
-                        data-account="123-456-7890">
-
-                        복사
-
-                    </button>
-
-                </div>
-
+        <div class="account-card">
+            <div class="account-left">
+                <span class="label">신부측</span>
+                <strong>김신부</strong>
             </div>
 
+            <div class="divider"></div>
 
+            <div class="account-right">
+                <span class="account-number">국민은행 220-987-654321</span>
 
-            <div class="account-card">
-
-                <div class="person">
-
-                    <span>신부 어머니</span>
-
-                    <strong>지미숙</strong>
-
-                </div>
-
-                <div class="bank-box">
-
-                    <div>
-
-                        <div class="bank">
-                            우리은행
-                        </div>
-
-                        <div class="number">
-                            123-456-7890
-                        </div>
-
-                    </div>
-
-                    <button
-                        class="copy-btn"
-                        data-account="123-456-7890">
-
-                        복사
-
-                    </button>
-
-                </div>
-
+                <button class="copy-btn"
+                    data-copy="220-987-654321">
+                    📋 복사하기
+                </button>
             </div>
-
         </div>
 
     </div>
 
+    <div id="toast">계좌번호가 복사되었습니다.</div>
 </section>
-
-
-
-<!-- Toast -->
-
-<div id="toast">
-
-    계좌번호가 복사되었습니다.
-
-</div>
-
-
-
-<script src="js/main.js"></script>
-
-</body>
-</html>
