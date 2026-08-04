@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'GyeonggiBatang';
-    src: url('./fonts/경기천년바탕_Regular.ttf') format('truetype');
+    src: url('../경기천년바탕_Regular.ttf') format('truetype');
 }
 
 .account-section{
     width:100%;
-    background:#fffefc url("./images/account_bg.png") center center/cover no-repeat;
+    background:#fffefc url("../account_bg.png") center center/cover no-repeat;
     padding:70px 0;
     display:flex;
     justify-content:center;
